@@ -1,4 +1,4 @@
-# vue-webpack-boilerplate
+# fast-prototyping
 
 > A full-featured Webpack setup with hot-reload, lint-on-save, unit testing & css extraction.
 
