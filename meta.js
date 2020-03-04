@@ -31,7 +31,7 @@ module.exports = {
       return templateVersion
     },
   },
-  
+
   prompts: {
     name: {
       when: 'isNotTest',
@@ -56,11 +56,11 @@ module.exports = {
       type: 'list',
       message: 'Vue build',
       choices: [
-        {
-          name: 'Runtime + Compiler: recommended for most users',
-          value: 'standalone',
-          short: 'standalone',
-        },
+        // {
+        //   name: 'Runtime + Compiler: recommended for most users',
+        //   value: 'standalone',
+        //   short: 'standalone',
+        // },
         {
           name:
             'Runtime-only: about 6KB lighter min+gzip, but templates (or any Vue-specific HTML) are ONLY allowed in .vue files - render functions are required elsewhere',
@@ -69,11 +69,11 @@ module.exports = {
         },
       ],
     },
-    router: {
-      when: 'isNotTest',
-      type: 'confirm',
-      message: 'Install vue-router?',
-    },
+    // router: {
+    //   when: 'isNotTest',
+    //   type: 'confirm',
+    //   message: 'Install vue-router?',
+    // },
     lint: {
       when: 'isNotTest',
       type: 'confirm',
@@ -136,24 +136,25 @@ module.exports = {
     autoInstall: {
       when: 'isNotTest',
       type: 'list',
+      default: 'yarn',
       message:
         'Should we run `npm install` for you after the project has been created? (recommended)',
       choices: [
-        {
-          name: 'Yes, use NPM',
-          value: 'npm',
-          short: 'npm',
-        },
+        // {
+        //   name: 'Yes, use NPM',
+        //   value: 'npm',
+        //   short: 'npm',
+        // },
         {
           name: 'Yes, use Yarn',
           value: 'yarn',
           short: 'yarn',
         },
-        {
-          name: 'No, I will handle that myself',
-          value: false,
-          short: 'no',
-        },
+        // {
+        //   name: 'No, I will handle that myself',
+        //   value: false,
+        //   short: 'no',
+        // },
       ],
     },
   },
@@ -162,14 +163,14 @@ module.exports = {
     '.eslintignore': 'lint',
     'config/test.env.js': 'unit || e2e',
     'build/webpack.test.conf.js': "unit && runner === 'karma'",
-    'test/unit/**/*': 'unit',
-    'test/unit/index.js': "unit && runner === 'karma'",
-    'test/unit/jest.conf.js': "unit && runner === 'jest'",
-    'test/unit/karma.conf.js': "unit && runner === 'karma'",
-    'test/unit/specs/index.js': "unit && runner === 'karma'",
-    'test/unit/setup.js': "unit && runner === 'jest'",
-    'test/e2e/**/*': 'e2e',
-    'src/router/**/*': 'router',
+    // 'test/unit/**/*': 'unit',
+    // 'test/unit/index.js': "unit && runner === 'karma'",
+    // 'test/unit/jest.conf.js': "unit && runner === 'jest'",
+    // 'test/unit/karma.conf.js': "unit && runner === 'karma'",
+    // 'test/unit/specs/index.js': "unit && runner === 'karma'",
+    // 'test/unit/setup.js': "unit && runner === 'jest'",
+    // 'test/e2e/**/*': 'e2e',
+    // 'src/router/**/*': 'router',
   },
   complete: function(data, { chalk }) {
     const green = chalk.green
