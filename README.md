@@ -1,8 +1,19 @@
-# vue-webpack-boilerplate
+# fast-prototyping
 
 > A full-featured Webpack setup with hot-reload, lint-on-save, unit testing & css extraction.
 
 > This template is Vue 2.0 compatible. For Vue 1.x use this command: `vue init webpack#1.0 my-project`
+
+
+# Vue-cli 3 is here, so this template is now considered deprecated.
+
+This template was the main template for vue-cli verison 2.*.
+
+Now that we have released a [stable version of vue-cli 3](https://cli.vuejs.org), which incorporates all features that this template offers (and much more), we think that this template doesn't have any significant use for the future, so we won't put much resource in developing it further.
+
+We will try and fix major issues should they arise, but not much more.
+
+Feel free to fork this template if you want to keep it alive.
 
 ## Documentation
 
